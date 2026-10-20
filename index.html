@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 9: Electric Current - Complete Visual Solutions & Quiz</title>
+  <!-- Google Fonts: Noto Sans Telugu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script id="mathjax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body, button, input, select, textarea {
+      font-family: 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+    }
+    .lang-te { display: none; }
+    .active-te .lang-en { display: none !important; }
+    .active-te .lang-te { display: block !important; }
+    .active-te inline.lang-te, .active-te span.lang-te { display: inline !important; }
+    .answer-content { display: none; }
+    .answer-content.show { display: block; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col justify-between leading-relaxed">
+
+  <!-- Header & Language Switcher -->
+  <header class="bg-blue-800 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 md:py-4 flex justify-between items-center gap-2">
+      <div>
+        <h1 class="text-lg md:text-2xl font-bold leading-tight">9. ELECTRIC CURRENT</h1>
+        <p class="text-xs md:text-sm text-blue-200 mt-0.5">Class 10 Physical Science | Abhyasa Deepika Assessment & Quiz</p>
+      </div>
+      <!-- Language Toggle Switch -->
+      <button onclick="toggleLanguage()" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-lg shadow transition duration-200 text-xs md:text-sm shrink-0 flex items-center gap-1.5">
+        <span>🌐</span>
+        <span id="langBtnText">Switch to Telugu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-4xl mx-auto px-3 md:px-4 py-6 md:py-8 flex-grow w-full">
+
+    <div class="bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-200 mb-6">
+
+      <!-- SECTION 1: VERY SHORT ANSWER QUESTIONS -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Very Short Answer Questions</span>
+          <span class="lang-te">అతి స్వల్ప సమాధాన ప్రశ్నలు</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 mb-8">
+        <!-- VSA 1 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('vsa1', 'vicon1')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">1. What happens if a high melting point conductor is used as a fuse in household connections?</span>
+              <span class="lang-te">1. గృహ విద్యుత్ వలయాల్లో అధిక ద్రవీభవన స్థానం గల వాహకాన్ని ఫ్యూజ్‌గా ఉపయోగిస్తే ఏమి జరుగుతుంది?</span>
+            </span>
+            <span id="vicon1" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="vsa1" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: If a high melting point conductor is used, it will not melt when excessive current flows through the circuit. As a result, appliances can get damaged or fire accidents may occur[cite: 8].</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: అధిక ద్రవీభవన స్థానం ఉన్న వాహకాన్ని ఉపయోగిస్తే, వలయంలో పరిమితికి మించిన విద్యుత్ ప్రవహించినప్పుడు కూడా అది కరిగిపోదు. దీనివలన పరికరాలు కాలిపోవడం లేదా అగ్నిప్రమాదాలు జరుగుతాయి[cite: 8].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VSA 2 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('vsa2', 'vicon2')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">2. Do electric bulbs in houses and decorative bulbs are connected in the same way?</span>
+              <span class="lang-te">2. మన ఇళ్లలోని విద్యుత్ బల్బులు మరియు అలంకరణ బల్బులు ఒకే విధంగా కలపబడతాయా?</span>
+            </span>
+            <span id="vicon2" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="vsa2" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: No. Household bulbs are connected in <strong>Parallel</strong>, whereas decorative festival lights are connected in <strong>Series</strong>[cite: 8].</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: లేదు. ఇళ్లలోని బల్బులు సమాంతర సంధానం (Parallel) లోనూ, అలంకరణ బల్బులు శ్రేణి సంధానం (Series) లోనూ అమర్చబడి ఉంటాయి[cite: 8].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VSA 3 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('vsa3', 'vicon3')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">3. What happens to the resistance of a conductor if we increase its length?</span>
+              <span class="lang-te">3. ఒక వాహకం యొక్క పొడవును పెంచితే దాని నిరోధం ఏమవుతుంది?</span>
+            </span>
+            <span id="vicon3" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="vsa3" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: Resistance increases because resistance is directly proportional to length ($R \propto l$)[cite: 8].</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: నిరోధం పెరుగుతుంది. ఎందుకంటే నిరోధం పొడవుకు నేరుగా అనులోమానుపాతంలో ఉంటుంది ($R \propto l$)[cite: 8].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VSA 4 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('vsa4', 'vicon4')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">4. Why does overload occur in a circuit? Explain.</span>
+              <span class="lang-te">4. విద్యుత్ వలయంలో ఓవర్‌లోడ్ ఎందుకు జరుగుతుంది? వివరించండి.</span>
+            </span>
+            <span id="vicon4" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="vsa4" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: Overload occurs when too many high-power appliances are connected to a single circuit, drawing current beyond the safe limit[cite: 8].</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: ఒకే వలయంలో ఎక్కువ శక్తి గల పరికరాలను ఏకకాలంలో ఆన్ చేసినప్పుడు పరిమితికి మించి విద్యుత్ ప్రవహించి ఓవర్‌లోడ్ ఏర్పడుతుంది[cite: 8].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VSA 5 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('vsa5', 'vicon5')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">5. In a household circuit $220\text{ V}$ voltage and $440\,\Omega$ resistance are connected, find the electric current.</span>
+              <span class="lang-te">5. గృహ వలయంలో $220\text{ V}$ వోల్టేజ్ మరియు $440\,\Omega$ నిరోధం ఉంటే, విద్యుత్ ప్రవాహాన్ని కనుగొనండి.</span>
+            </span>
+            <span id="vicon5" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="vsa5" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>$I = \dfrac{V}{R} = \dfrac{220}{440} = 0.5\text{ A}$[cite: 8]</p>
+            </div>
+            <div class="lang-te">
+              <p>$I = \dfrac{V}{R} = \dfrac{220}{440} = 0.5\text{ A}$[cite: 8]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: SHORT ANSWER QUESTIONS -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Short Answer Questions</span>
+          <span class="lang-te">స్వల్ప సమాధాన ప్రశ్నలు</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 mb-8">
+        <!-- SQ 6 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans6', 'sicon6')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">6. Find the current passing through a human body having resistance $100,000\,\Omega$ connected to $240\text{ V}$.</span>
+              <span class="lang-te">6. $100,000\,\Omega$ నిరోధం గల మానవ శరీరం ద్వారా $240\text{ V}$ వద్ద ప్రవహించే విద్యుత్ ప్రవాహం ఎంత?</span>
+            </span>
+            <span id="sicon6" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans6" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>$I = \dfrac{240}{100000} = 0.0024\text{ A} = 2.4\text{ mA}$[cite: 9]</p>
+            </div>
+            <div class="lang-te">
+              <p>$I = \dfrac{240}{100000} = 0.0024\text{ A} = 2.4\text{ mA}$[cite: 9]</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ 7 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans7', 'sicon7')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">7. Two resistances $4\,\Omega$ and $8\,\Omega$ are connected to get least resistance. Find resultant resistance.</span>
+              <span class="lang-te">7. $4\,\Omega$ మరియు $8\,\Omega$ నిరోధాలతో కనిష్ఠ నిరోధం వచ్చేలా చేస్తే ఫలిత నిరోధం ఎంత?</span>
+            </span>
+            <span id="sicon7" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans7" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Parallel connection: $R_{eq} = \dfrac{4 \times 8}{4 + 8} = \dfrac{32}{12} = 2.67\,\Omega$[cite: 9].</p>
+            </div>
+            <div class="lang-te">
+              <p>సమాంతర సంధానం: $R_{eq} = \dfrac{4 \times 8}{4 + 8} = 2.67\,\Omega$[cite: 9].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ 8 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans8', 'sicon8')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">8. Two resistances $4\,\Omega$ and $8\,\Omega$ are connected to get high resistance. Find resultant resistance.</span>
+              <span class="lang-te">8. $4\,\Omega$ మరియు $8\,\Omega$ నిరోధాలతో గరిష్ఠ నిరోధం వచ్చేలా చేస్తే ఫలిత నిరోధం ఎంత?</span>
+            </span>
+            <span id="sicon8" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans8" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Series connection: $R_{eq} = 4 + 8 = 12\,\Omega$[cite: 9].</p>
+            </div>
+            <div class="lang-te">
+              <p>శ్రేణి సంధానం: $R_{eq} = 4 + 8 = 12\,\Omega$[cite: 9].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ 9 with Diagram -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans9', 'sicon9')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">9. Find resultant resistance and current in the given circuit.</span>
+              <span class="lang-te">9. ఇచ్చిన వలయంలో ఫలిత నిరోధం మరియు విద్యుత్ ప్రవాహాన్ని కనుగొనండి.</span>
+            </span>
+            <span id="sicon9" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans9" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="bg-white p-3 rounded-lg border border-gray-300 flex justify-center my-2">
+              <svg viewBox="0 0 320 120" class="w-full max-w-sm h-auto">
+                <line x1="160" y1="105" x2="40" y2="105" stroke="#1e293b" stroke-width="2"/>
+                <line x1="40" y1="105" x2="40" y2="40" stroke="#1e293b" stroke-width="2"/>
+                <line x1="40" y1="40" x2="80" y2="40" stroke="#1e293b" stroke-width="2"/>
+                <line x1="160" y1="95" x2="280" y2="95" stroke="#1e293b" stroke-width="2"/>
+                <line x1="280" y1="95" x2="280" y2="40" stroke="#1e293b" stroke-width="2"/>
+                <line x1="220" y1="40" x2="280" y2="40" stroke="#1e293b" stroke-width="2"/>
+                <line x1="80" y1="20" x2="150" y2="20" stroke="#2563eb" stroke-width="2"/>
+                <line x1="80" y1="60" x2="150" y2="60" stroke="#2563eb" stroke-width="2"/>
+                <text x="105" y="15" font-size="10" font-weight="bold" fill="#2563eb">8 Ω</text>
+                <text x="105" y="75" font-size="10" font-weight="bold" fill="#2563eb">8 Ω</text>
+                <line x1="150" y1="40" x2="220" y2="40" stroke="#16a34a" stroke-width="2"/>
+                <text x="175" y="32" font-size="10" font-weight="bold" fill="#16a34a">20 Ω</text>
+                <line x1="140" y1="95" x2="180" y2="95" stroke="#dc2626" stroke-width="3"/>
+                <text x="150" y="85" font-size="10" font-weight="bold" fill="#dc2626">12V</text>
+              </svg>
+            </div>
+            <div class="lang-en">
+              <p>• Parallel part: $\dfrac{8 \times 8}{8 + 8} = 4\,\Omega$[cite: 9]</p>
+              <p>• Total resistance: $R_{eq} = 4 + 20 = 24\,\Omega$[cite: 9]</p>
+              <p>• Current: $I = \dfrac{12}{24} = 0.5\text{ A}$[cite: 9]</p>
+            </div>
+            <div class="lang-te">
+              <p>• సమాంతర భాగం: $4\,\Omega$[cite: 9]</p>
+              <p>• మొత్తం నిరోధం: $R_{eq} = 4 + 20 = 24\,\Omega$[cite: 9]</p>
+              <p>• విద్యుత్ ప్రవాహం: $I = \dfrac{12}{24} = 0.5\text{ A}$[cite: 9]</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ 10 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans10', 'sicon10')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">10. Draw a simple electric circuit using Battery, Bulb, Wires, and Key.</span>
+              <span class="lang-te">10. బాటరీ, బల్బ్, తీగలు మరియు కీ ఉపయోగించి సరళ విద్యుత్ వలయ పటాన్ని గీయండి.</span>
+            </span>
+            <span id="sicon10" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans10" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="bg-white p-3 rounded-lg border border-gray-300 flex justify-center my-2">
+              <svg viewBox="0 0 360 160" class="w-full max-w-md h-auto">
+                <line x1="50" y1="40" x2="280" y2="40" stroke="#1e293b" stroke-width="2"/>
+                <line x1="50" y1="40" x2="50" y2="120" stroke="#1e293b" stroke-width="2"/>
+                <line x1="50" y1="120" x2="160" y2="120" stroke="#1e293b" stroke-width="2"/>
+                <line x1="200" y1="120" x2="310" y2="120" stroke="#1e293b" stroke-width="2"/>
+                <line x1="310" y1="40" x2="310" y2="120" stroke="#1e293b" stroke-width="2"/>
+                <circle cx="280" cy="40" r="15" fill="#fef08a" stroke="#1e293b" stroke-width="2"/>
+                <text x="302" y="45" font-size="12" font-weight="bold" fill="#1e3a8a">Bulb</text>
+                <line x1="100" y1="110" x2="100" y2="130" stroke="#dc2626" stroke-width="3"/>
+                <text x="95" y="100" font-size="11" font-weight="bold" fill="#dc2626">Battery</text>
+                <circle cx="180" cy="120" r="3" fill="#1e293b"/>
+                <text x="168" y="142" font-size="11" font-weight="bold" fill="#0f172a">Key</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ 11 with Junction Diagram -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans11', 'sicon11')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">11. Observe the given Junction and then find the value of $i$.</span>
+              <span class="lang-te">11. ఇచ్చిన జంక్షన్‌ను పరిశీలించి $i$ విలువను కనుగొనండి.</span>
+            </span>
+            <span id="sicon11" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans11" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="bg-white p-3 rounded-lg border border-gray-300 flex justify-center my-2">
+              <svg viewBox="0 0 200 200" class="w-full max-w-xs h-auto">
+                <circle cx="100" cy="100" r="4" fill="#dc2626"/>
+                <line x1="40" y1="40" x2="100" y2="100" stroke="#16a34a" stroke-width="2"/>
+                <text x="25" y="35" font-size="10" font-weight="bold" fill="#16a34a">4A</text>
+                <line x1="30" y1="100" x2="100" y2="100" stroke="#16a34a" stroke-width="2"/>
+                <text x="10" y="104" font-size="10" font-weight="bold" fill="#16a34a">8A</text>
+                <line x1="40" y1="160" x2="100" y2="100" stroke="#16a34a" stroke-width="2"/>
+                <text x="20" y="175" font-size="10" font-weight="bold" fill="#16a34a">4A</text>
+                <line x1="100" y1="170" x2="100" y2="100" stroke="#16a34a" stroke-width="2"/>
+                <text x="90" y="185" font-size="10" font-weight="bold" fill="#16a34a">5A</text>
+                <line x1="100" y1="100" x2="160" y2="40" stroke="#dc2626" stroke-width="2"/>
+                <text x="165" y="38" font-size="10" font-weight="bold" fill="#dc2626">8A</text>
+                <line x1="100" y1="100" x2="170" y2="100" stroke="#dc2626" stroke-width="2"/>
+                <text x="175" y="104" font-size="10" font-weight="bold" fill="#dc2626">4A</text>
+                <line x1="100" y1="100" x2="160" y2="160" stroke="#dc2626" stroke-width="2"/>
+                <text x="165" y="175" font-size="10" font-weight="bold" fill="#dc2626">4A</text>
+                <line x1="100" y1="100" x2="100" y2="30" stroke="#2563eb" stroke-width="3"/>
+                <text x="95" y="20" font-size="11" font-weight="bold" fill="#2563eb">i</text>
+              </svg>
+            </div>
+            <div class="lang-en">
+              <p>Incoming = Outgoing $\implies 4+8+4+5 = 8+4+4+i \implies 21 = 16+i \implies i = 5\text{ A}$[cite: 9].</p>
+            </div>
+            <div class="lang-te">
+              <p>వచ్చే ప్రవాహాల మొత్తం = పోయే ప్రవాహాల మొత్తం $\implies i = 5\text{ A}$[cite: 9].</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ 12 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans12', 'sicon12')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">12. Two bulbs have ratings $100\text{ W}, 220\text{ V}$ and $60\text{ W}, 220\text{ V}$. Which bulb has greater resistance?</span>
+              <span class="lang-te">12. $100\text{ W}, 220\text{ V}$ మరియు $60\text{ W}, 220\text{ V}$ బల్బులలో దేనికి నిరోధం ఎక్కువ?</span>
+            </span>
+            <span id="sicon12" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans12" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>$R = \dfrac{V^2}{P}$. Since resistance is inversely proportional to power ($R \propto 1/P$), the $60\text{ W}$ bulb has greater resistance[cite: 9].</p>
+            </div>
+            <div class="lang-te">
+              <p>నిరోధం సామర్థ్యానికి విలోమానుపాతంలో ఉంటుంది ($R \propto 1/P$), కాబట్టి $60\text{ W}$ బల్బుకు నిరోధం ఎక్కువ[cite: 9].</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: ESSAY TYPE QUESTIONS -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Essay Type Questions</span>
+          <span class="lang-te">వ్యాసరూప సమాధాన ప్రశ్నలు</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 mb-8">
+        <!-- EQ 13 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('eans13', 'eicon13')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">13. Write materials, procedure, and observations to prove Ohm's Law along with $V-I$ graph.</span>
+              <span class="lang-te">13. ఓమ్ నియమాన్ని నిరూపించే ప్రయోగానికి కావలసినవి, విధానం మరియు గ్రాఫ్.</span>
+            </span>
+            <span id="eicon13" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="eans13" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-3">
+            <div class="lang-en">
+              <p><strong>Aim:</strong> To prove $V \propto I$[cite: 11].</p>
+            </div>
+            <div class="lang-te">
+              <p><strong>ఉద్దేశం:</strong> $V \propto I$ అని నిరూపించడం[cite: 11].</p>
+            </div>
+            <div class="bg-white p-3 rounded-lg border border-gray-300 flex justify-center my-2">
+              <svg viewBox="0 0 300 160" class="w-full max-w-sm h-auto">
+                <line x1="50" y1="130" x2="270" y2="130" stroke="#1e293b" stroke-width="2"/>
+                <line x1="50" y1="20" x2="50" y2="140" stroke="#1e293b" stroke-width="2"/>
+                <text x="250" y="150" font-size="11" font-weight="bold" fill="#1e3a8a">V (in volt)[cite: 11]</text>
+                <text x="15" y="30" font-size="11" font-weight="bold" fill="#1e3a8a" transform="rotate(-90 15 30)">I (in ampere)[cite: 11]</text>
+                <line x1="50" y1="130" x2="230" y2="40" stroke="#dc2626" stroke-width="2.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- EQ 14 & 15: Detailed Solutions for Resistance vs Length & Area -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('eans14', 'eicon14')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">14 & 15. Activity to find relation between Resistance & Length AND Resistance & Cross-sectional Area.</span>
+              <span class="lang-te">14 & 15. నిరోధానికి, పొడవు మరియు అడ్డుకోత వైశాల్యానికి గల సంబంధాన్ని కనుగొనే ప్రయోగాలు.</span>
+            </span>
+            <span id="eicon14" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="eans14" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-3">
+            <div class="lang-en space-y-2">
+              <p><strong>14. Relation between Resistance and Length ($l$):</strong></p>
+              <p>• <strong>Aim:</strong> To show that resistance of a conductor is directly proportional to its length ($R \propto l$).</p>
+              <p>• <strong>Procedure:</strong> Connect a dry cell, ammeter, switch, and a uniform resistance wire (e.g., constantan or nichrome) in series. Measure current ($I$) for length $l$, then double and triple the length in the circuit. Note down the current readings.</p>
+              <p>• <strong>Observation:</strong> As length increases, current decreases, which means resistance increases proportionally.</p>
+              <p><strong>15. Relation between Resistance and Cross-sectional Area ($A$):</strong></p>
+              <p>• <strong>Aim:</strong> To show that resistance is inversely proportional to the cross-sectional area of the conductor ($R \propto \dfrac{1}{A}$).</p>
+              <p>• <strong>Procedure:</strong> Take wires of the same material and length but different thicknesses (cross-sectional areas). Connect them one by one in the circuit and measure the current.</p>
+              <p>• <strong>Observation:</strong> Thicker wires allow more current (lower resistance), proving $R \propto \dfrac{1}{A}$.</p>
+              <p>• <strong>Conclusion:</strong> Combining both: $R \propto \dfrac{l}{A} \implies R = \rho \dfrac{l}{A}$ (where $\rho$ is resistivity).</p>
+            </div>
+            <div class="lang-te space-y-2">
+              <p><strong>14. నిరోధం - పొడవు ($l$) ల మధ్య సంబంధం:</strong></p>
+              <p>• <strong>ఉద్దేశం:</strong> వాహక నిరోధం దాని పొడవుకు అనులోమానుపాతంలో ఉంటుందని నిరూపించడం ($R \propto l$).</p>
+              <p>• <strong>విధానం:</strong> బ్యాటరీ, అమ్మీటర్, స్విచ్ మరియు ఒకే మందం గల నిరోధక తీగను శ్రేణిలో కలపాలి. తీగ పొడవును మారుస్తూ అమ్మీటర్ ద్వారా విద్యుత్ ప్రవాహాన్ని నమోదు చేయాలి.</p>
+              <p>• <strong>పరిశీలన:</strong> తీగ పొడవు పెరిగితే విద్యుత్ ప్రవాహం తగ్గుతుంది, అనగా నిరోధం పెరుగుతుంది ($R \propto l$).</p>
+              <p><strong>15. నిరోధం - అడ్డుకోత వైశాల్యం ($A$) ల మధ్య సంబంధం:</strong></p>
+              <p>• <strong>ఉద్దేశం:</strong> నిరోధం అడ్డుకోత వైశాల్యానికి విలోమానుపాతంలో ఉంటుందని చూపడం ($R \propto \dfrac{1}{A}$).</p>
+              <p>• <strong>విధానం:</strong> ఒకే పదార్థం, సమాన పొడవు ఉండి వేర్వేరు మందాలు (వైశాల్యాలు) గల తీగలను వలయంలో వేర్వేరుగా అనుసంధానించి విద్యుత్ ప్రవాహాన్ని పరిశీలించాలి.</p>
+              <p>• <strong>పరిశీలన:</strong> మందమైన తీగలో (వైశాల్యం ఎక్కువ) విద్యుత్ ప్రవాహం ఎక్కువగా ఉంటుంది (నిరోధం తక్కువ).</p>
+              <p>• <strong>ముగింపు:</strong> $R = \rho \dfrac{l}{A}$ ($\rho$ = విశిష్ట నిరోధం).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EQ 16 with Loop Diagram -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('eans16', 'eicon16')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">16. Solve the loop equations using Kirchhoff's Loop Law for: 1) ABCDA, 2) ADCBA</span>
+              <span class="lang-te">16. కిర్చ్‌హాఫ్ లూప్ నియమం ప్రకారం ఇచ్చిన లూప్‌లకు సమీకరణాలను సాధించండి.</span>
+            </span>
+            <span id="eicon16" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="eans16" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="bg-white p-3 rounded-lg border border-gray-300 flex justify-center my-2">
+              <svg viewBox="0 0 320 120" class="w-full max-w-sm h-auto">
+                <rect x="50" y="20" width="220" height="80" fill="none" stroke="#1e293b" stroke-width="2"/>
+                <text x="38" y="18" font-size="12" font-weight="bold" fill="#2563eb">A</text>
+                <text x="278" y="18" font-size="12" font-weight="bold" fill="#2563eb">B</text>
+                <text x="278" y="112" font-size="12" font-weight="bold" fill="#2563eb">C</text>
+                <text x="38" y="112" font-size="12" font-weight="bold" fill="#2563eb">D</text>
+                <text x="115" y="42" font-size="10" font-weight="bold" fill="#dc2626">12V</text>
+                <text x="195" y="12" font-size="10" font-weight="bold" fill="#2563eb">4 Ω</text>
+                <text x="285" y="65" font-size="10" font-weight="bold" fill="#2563eb">4 Ω</text>
+                <text x="145" y="90" font-size="10" font-weight="bold" fill="#2563eb">4 Ω</text>
+              </svg>
+            </div>
+            <div class="lang-en">
+              <p>• 1) <strong>Loop ABCDA:</strong> $12 - 8 - 8 - 8 - 12 = -24\text{ V}$</p>
+              <p>• 2) <strong>Loop ADCBA:</strong> $+12 + 8 + 8 + 8 - 12 = +24\text{ V}$</p>
+            </div>
+            <div class="lang-te">
+              <p>• 1) <strong>ల్యూప్ ABCDA:</strong> $12 - 8 - 8 - 8 - 12 = -24\text{ V}$</p>
+              <p>• 2) <strong>ల్యూప్ ADCBA:</strong> $+12 + 8 + 8 + 8 - 12 = +24\text{ V}$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 4: MULTIPLE CHOICE QUESTIONS QUIZ -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6 flex justify-between items-center">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Multiple Choice Questions Quiz</span>
+          <span class="lang-te">బహుళైచ్ఛిక ప్రశ్నల క్విజ్ (MCQs)</span>
+        </h2>
+        <span class="text-xs md:text-sm font-bold text-blue-800 bg-white px-2.5 py-1 rounded-full border border-blue-300">Total: 8 Marks</span>
+      </div>
+
+      <!-- Scoreboard Display -->
+      <div id="scoreBox" class="hidden mb-6 p-4 bg-yellow-50 border-2 border-yellow-400 rounded-xl text-center">
+        <h3 class="text-xl md:text-2xl font-bold text-yellow-800" id="scoreTitle">Your Score: 0 / 8</h3>
+        <p class="text-xs md:text-sm font-bold text-gray-700 mt-1">క్రింద ప్రతీ ప్రశ్నకు సరియైన సమాధానం మరియు విశ్లేషణను చూడండి.</p>
+      </div>
+
+      <form id="quizForm" class="space-y-6">
+
+        <!-- MCQ 1 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q1_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">1. This is used to measure potential difference:</span>
+            <span class="lang-te">1. పొటెన్షియల్ భేదాన్ని కొలవడానికి దేనిని ఉపయోగిస్తారు?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="A"> A) Ammeter</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="B"> B) Voltmeter</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="C"> C) Thermistor</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="D"> D) Electric motor</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q2_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">2. In an electric cell, chemical energy converts into:</span>
+            <span class="lang-te">2. విద్యుత్ ఘటంలో రసాయన శక్తి ఏ శక్తిగా మారుతుంది?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="A"> A) Mechanical energy</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="B"> B) Magnetic energy</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="C"> C) Electric energy</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="D"> D) Heat energy</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q3_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">3. Joule / Coulomb is same as:</span>
+            <span class="lang-te">3. జౌల్ / కూలుంబ్ అనేది దేనికి సమానం?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="A"> A) Watt</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="B"> B) Ampere</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="C"> C) Volt</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="D"> D) Ohm</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q4_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">4. The material which obeys Ohm's law is:</span>
+            <span class="lang-te">4. ఓమ్ నియమాన్ని పాటించే పదార్థం:</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="A"> A) Copper</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="B"> B) Silicon</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="C"> C) LED</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="D"> D) Transistor</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q5_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">5. The resistance of the material will NOT depend on:</span>
+            <span class="lang-te">5. పదార్థ నిరోధం దేనిపై ఆధారపడదు?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="A"> A) Length</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="B"> B) Cross-sectional area</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="C"> C) Nature of the material</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="D"> D) No. of electrons</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 6 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q6_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">6. The filament of an electric bulb is usually made of:</span>
+            <span class="lang-te">6. బల్బు ఫిలమెంట్ సాధారణంగా దేనితో తయారవుతుంది?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="A"> A) Tungsten</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="B"> B) Copper</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="C"> C) Silver</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="D"> D) Lead</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 7 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q7_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">7. The resistors of values $2\,\Omega, 4\,\Omega$ and $6\,\Omega$ are connected in series. Equivalent resistance is:</span>
+            <span class="lang-te">7. $2\,\Omega, 4\,\Omega, 6\,\Omega$ నిరోధాలను శ్రేణిలో కలిపితే ఫలిత నిరోధం:</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q7" value="A"> A) $2\,\Omega$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q7" value="B"> B) $4\,\Omega$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q7" value="C"> C) $6\,\Omega$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q7" value="D"> D) $12\,\Omega$</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 8 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q8_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">8. Junction law is based on Law of Conservation of:</span>
+            <span class="lang-te">8. సంధి నియమం ఏ నిత్యత్వ నియమంపై ఆధారపడి ఉంటుంది?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q8" value="A"> A) Mass</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q8" value="B"> B) Charge</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q8" value="C"> C) Energy</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q8" value="D"> D) Momentum</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center pt-4">
+          <button type="button" onclick="submitQuiz()" class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 py-2.5 md:px-8 md:py-3 rounded-lg shadow-lg text-base md:text-lg transition duration-200">
+            Submit Quiz
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- Footer with User Contact Details -->
+  <footer class="bg-gray-900 text-gray-300 py-6 border-t border-gray-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-sm md:text-base font-bold text-white mb-1">Prepared by: A. Muninder Raju[cite: 1, 2]</p>
+      <p class="text-xs md:text-sm">GHM Chincholi B, Dist: Nirmal, Telangana[cite: 1, 2]</p>
+      <p class="text-xs text-gray-400 mt-1">
+        Email: <a href="mailto:muninderadluri@gmail.com" class="text-blue-400 hover:underline">muninderadluri@gmail.com</a>[cite: 1, 2]
+      </p>
+      <p class="text-xs text-gray-500 mt-3">© 2026 Abhyasa Vedika. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script for Language Toggle, Accordion, & Evaluation -->
+  <script>
+    function toggleLanguage() {
+      document.body.classList.toggle('active-te');
+      const btnText = document.getElementById('langBtnText');
+      if (document.body.classList.contains('active-te')) {
+        btnText.innerText = 'Switch to English';
+      } else {
+        btnText.innerText = 'Switch to Telugu';
+      }
+
+      if (!document.getElementById('scoreBox').classList.contains('hidden')) {
+        submitQuiz(true);
+      }
+    }
+
+    function toggleAnswer(ansId, iconId) {
+      const ansElem = document.getElementById(ansId);
+      const iconElem = document.getElementById(iconId);
+      
+      if (ansElem.classList.contains('show')) {
+        ansElem.classList.remove('show');
+        iconElem.innerText = '+';
+      } else {
+        ansElem.classList.add('show');
+        iconElem.innerText = '-';
+      }
+    }
+
+    const correctAnswers = {
+      q1: "B",
+      q2: "C",
+      q3: "C",
+      q4: "A",
+      q5: "D",
+      q6: "A",
+      q7: "D",
+      q8: "B"
+    };
+
+    const explanations = {
+      q1: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Voltmeter is used to measure potential difference.</p><p class="font-bold">Correct Option: B) Voltmeter</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">పొటెన్షియల్ భేదాన్ని కొలవడానికి వోల్ట్‌మీటర్ ఉపయోగిస్తారు.</p><p class="font-bold">సరియైన ఎంపిక: B) Voltmeter</p>`
+      },
+      q2: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">An electric cell converts chemical energy into electrical energy.</p><p class="font-bold">Correct Option: C) Electric energy</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">విద్యుత్ ఘటంలో రసాయన శక్తి విద్యుత్ శక్తిగా మారుతుంది.</p><p class="font-bold">సరియైన ఎంపిక: C) Electric energy</p>`
+      },
+      q3: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Joule / Coulomb = Volt.</p><p class="font-bold">Correct Option: C) Volt</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">జౌల్ / కూలుంబ్ = వోల్ట్.</p><p class="font-bold">సరియైన ఎంపిక: C) Volt</p>`
+      },
+      q4: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Copper obeys Ohm's law.</p><p class="font-bold">Correct Option: A) Copper</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">రాగి (Copper) ఓమ్ నియమాన్ని పాటిస్తుంది.</p><p class="font-bold">సరియైన ఎంపిక: A) Copper</p>`
+      },
+      q5: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Resistance does not depend directly on the total number of electrons.</p><p class="font-bold">Correct Option: D) No. of electrons</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">నిరోధం ఎలక్ట్రాన్ల సంఖ్యపై నేరుగా ఆధారపడదు.</p><p class="font-bold">సరియైన ఎంపిక: D) No. of electrons</p>`
+      },
+      q6: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Bulb filament is made of Tungsten.</p><p class="font-bold">Correct Option: A) Tungsten</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">బల్బు ఫిలమెంట్ టంగ్‌స్టన్‌తో చేయబడుతుంది.</p><p class="font-bold">సరియైన ఎంపిక: A) Tungsten</p>`
+      },
+      q7: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Series equivalent: $2 + 4 + 6 = 12\,\Omega$.</p><p class="font-bold">Correct Option: D) 12 Ω</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">శ్రేణిలో ఫలిత నిరోధం: $2 + 4 + 6 = 12\,\Omega$.</p><p class="font-bold">సరియైన ఎంపిక: D) 12 Ω</p>`
+      },
+      q8: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Junction law is based on conservation of charge.</p><p class="font-bold">Correct Option: B) Charge</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">సంధి నియమం ఆవేశ నిత్యత్వ నియమంపై ఆధారపడి ఉంటుంది.</p><p class="font-bold">సరియైన ఎంపిక: B) Charge</p>`
+      }
+    };
+
+    function submitQuiz(isLanguageChange = false) {
+      let score = 0;
+      const total = 8;
+      const isTelugu = document.body.classList.contains('active-te');
+
+      for (let i = 1; i <= total; i++) {
+        const qName = 'q' + i;
+        const selected = document.querySelector(`input[name="${qName}"]:checked`);
+        const qCard = document.getElementById(`${qName}_card`);
+        const feedback = qCard.querySelector('.q-feedback');
+        
+        feedback.classList.remove('hidden', 'bg-green-100', 'bg-red-100', 'text-green-900', 'text-red-900');
+        qCard.classList.remove('bg-green-50', 'bg-red-50', 'border-green-400', 'border-red-400');
+
+        const expText = isTelugu ? explanations[qName].te : explanations[qName].en;
+
+        if (selected) {
+          if (selected.value === correctAnswers[qName]) {
+            score++;
+            qCard.classList.add('bg-green-50', 'border-green-400');
+            feedback.classList.add('bg-green-100', 'text-green-900', 'p-3', 'rounded');
+            feedback.innerHTML = `<p class="font-bold text-green-700 mb-1">✓ Correct Answer! (సరియైన సమాధానం)</p>${expText}`;
+          } else {
+            qCard.classList.add('bg-red-50', 'border-red-400');
+            feedback.classList.add('bg-green-100', 'text-green-900', 'p-3', 'rounded');
+            feedback.innerHTML = `<p class="font-bold text-red-600 mb-1">✗ Wrong Answer! (మీరు ఎంచుకున్నది: ${selected.value})</p>${expText}`;
+          }
+        } else {
+          qCard.classList.add('bg-red-50', 'border-red-400');
+          feedback.classList.add('bg-green-100', 'text-green-900', 'p-3', 'rounded');
+          feedback.innerHTML = `<p class="font-bold text-red-600 mb-1">⚠ Not Answered!</p>${expText}`;
+        }
+        feedback.classList.println ? '' : feedback.classList.remove('hidden');
+      }
+
+      const scoreBox = document.getElementById('scoreBox');
+      const scoreTitle = document.getElementById('scoreTitle');
+      scoreBox.classList.remove('hidden');
+      scoreTitle.innerText = `Your Score: ${score} / ${total}`;
+      
+      if (window.MathJax) {
+        MathJax.typesetPromise ? MathJax.typesetPromise() : MathJax.typeset();
+      }
+
+      if (!isLanguageChange) {
+        scoreBox.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
